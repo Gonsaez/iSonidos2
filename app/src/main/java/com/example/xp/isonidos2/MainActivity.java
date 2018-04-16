@@ -56,7 +56,6 @@ public class MainActivity extends AppCompatActivity {
         }else{
             MediaPlayer m = new MediaPlayer();
             m = MediaPlayer.create(this, (int) findViewById(view.getId()).getTag());
-
             m.start();
             m.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                 @Override
